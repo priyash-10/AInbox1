@@ -1,0 +1,292 @@
+/* Calendar page specific styling */
+
+/* FullCalendar container */
+.fullcalendar-container {
+  height: 100%;
+  min-height: 650px;
+}
+
+/* Calendar header */
+.fc-header-toolbar {
+  padding: 1rem;
+  margin-bottom: 0 !important;
+}
+
+/* Week view styles */
+.fc-timeGridWeek-view .fc-col-header-cell {
+  background-color: #f5f7fa;
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+/* Day headers */
+.fc-col-header-cell {
+  padding: 10px;
+  background-color: #f8fafc;
+  font-weight: 600;
+}
+
+.fc-col-header-cell.fc-day-today {
+  background-color: rgba(34, 111, 180, 0.1);
+}
+
+/* Time slots */
+.fc-timegrid-slot {
+  height: 40px !important;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.fc-timegrid-slot-label {
+  font-size: 0.85rem;
+  color: #64748b;
+  vertical-align: middle;
+}
+
+/* Event styles */
+.fc-event {
+  border: none;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Late night event styling - matching the blue in image */
+.fc-event.late-night-event {
+  background-color: #2c6dbf !important;
+  border-color: #2c6dbf !important;
+}
+
+/* Meeting event styling */
+.fc-event.meeting-event {
+  background-color: #2c6dbf !important;
+  border-color: #2c6dbf !important;
+}
+
+/* Lunch event styling */
+.fc-event.lunch-event {
+  background-color: #2c6dbf !important;
+  border-color: #2c6dbf !important;
+}
+
+/* Today highlight */
+.fc-day-today {
+  background-color: rgba(34, 111, 180, 0.05) !important;
+}
+
+/* Current time indicator */
+.fc-timegrid-now-indicator-line {
+  border-color: #f43f5e;
+  border-width: 2px;
+}
+
+.fc-timegrid-now-indicator-arrow {
+  border-color: #f43f5e;
+  border-width: 2px;
+}
+
+/* Time column */
+.fc-timegrid-axis {
+  background-color: #f8fafc;
+  font-weight: 500;
+  width: 70px !important;
+}
+
+/* Button styles */
+.fc-button-primary {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  color: #475569 !important;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.fc-button-primary:hover {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+.fc-button-active {
+  background-color: #2c6dbf !important;
+  border-color: #2c6dbf !important;
+  color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fc-header-toolbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .fc-toolbar-chunk {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fullcalendar-container {
+    min-height: 500px;
+  }
+
+  .fc-timegrid-slot {
+    height: 35px !important;
+  }
+}
+
+/* Add styling for the calendar view buttons */
+.view-option-button {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.view-option-button.active {
+  background-color: #2c6dbf;
+  color: white;
+}
+
+/* Add agenda view styling to match the image */
+.fc-agenda-view .fc-day-grid {
+  background-color: #fff;
+}
+
+/* Custom event styling for specific event types */
+.fc-event.dinner-event {
+  background-color: #2c6dbf !important;
+}
+
+.fc-event.conference-event {
+  background-color: #2c6dbf !important;
+}
+
+/* Style the popover for event click */
+.fc-popover {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.fc-popover-header {
+  background-color: #f8fafc;
+  padding: 8px;
+  font-weight: 500;
+}
+
+/* Weekend styling */
+.fc-day-sat,
+.fc-day-sun {
+  background-color: #f8fafc;
+}
+
+/* Style for all-day events */
+.fc-daygrid-event {
+  background-color: #2c6dbf;
+  border-color: #2c6dbf;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* Event content styling */
+.event-time {
+  font-size: 0.7rem;
+  opacity: 0.9;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.event-title {
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Calendar title in header */
+.fc-toolbar-title {
+  font-size: 1.15rem !important;
+  font-weight: 600;
+}
+
+/* Set the header for April 12-18 like the image */
+.fc-toolbar-title::first-letter {
+  text-transform: uppercase;
+}
+
+/* Style the week label */
+.fc-list-day-cushion {
+  background-color: #f8fafc !important;
+}
+
+/* Add a light grid appearance */
+.fc-timegrid-col {
+  border-color: #f1f5f9 !important;
+}
+
+.fc-timegrid-slot-lane {
+  border-color: #f1f5f9 !important;
+}
+
+/* Match the blue color from the image */
+.fc th,
+.fc-button-primary,
+.fc-button-active,
+.fc-event.late-night-event {
+  border-color: #2c6dbf !important;
+}
+
+/* Highlight Weekend columns */
+.fc-day-sat,
+.fc-day-sun {
+  background-color: rgba(241, 245, 249, 0.4);
+}
+
+/* Make the Saturday title in header blue, like the image */
+.fc-col-header-cell.fc-day-sat .fc-col-header-cell-cushion {
+  color: #2c6dbf;
+}
+
+/* Make time slots more visible */
+.fc-timegrid-slot-label-cushion {
+  font-weight: 500;
+  color: #64748b;
+}
+
+/* Add spacing in the events list */
+.fc-list-event-title {
+  padding-left: 8px !important;
+}
+
+/* Current time indicator styling */
+.fc-timegrid-now-indicator-arrow:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #f43f5e;
+  border-radius: 50%;
+  left: -4px;
+  top: -3px;
+}
+
+/* Additional styling for late night event */
+.fc-event.late-night-event .event-title {
+  font-weight: 500;
+}
+
+/* Add these styles for highlighting selected time slots */
+
+/* Time slot selection highlight */
+.fc-timegrid-slot.selected-time-slot,
+.fc-timegrid-slot:hover {
+  background-color: rgba(44, 109, 191, 0.1);
+  cursor: pointer;
+}
+
+/* Subtle hover effect for time slots */
+.fc-timegrid-slot:hover {
+  background-color: rgba(44, 109, 191, 0.1);
+}

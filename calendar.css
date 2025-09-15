@@ -1,0 +1,75 @@
+/* Custom styles for the sidebar calendar to ensure it's responsive */
+
+.sidebar-calendar-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Make FC calendar fit within sidebar */
+.sidebar-calendar-container .fc {
+  font-size: 0.75rem; /* Reduce font size */
+  max-width: 100%;
+}
+
+/* Reduce padding in cells */
+.sidebar-calendar-container .fc-daygrid-day-frame {
+  padding: 2px !important;
+}
+
+/* Make header more compact */
+.sidebar-calendar-container .fc-col-header-cell {
+  padding: 2px !important;
+}
+
+/* Adjust toolbar buttons */
+.sidebar-calendar-container .fc-toolbar-title {
+  font-size: 0.85rem !important;
+}
+
+.sidebar-calendar-container .fc-button {
+  padding: 0.2rem 0.4rem !important;
+  font-size: 0.7rem !important;
+}
+
+/* Make event dots smaller */
+.sidebar-calendar-container .fc-daygrid-event-dot {
+  margin: 0 2px !important;
+  border-width: 3px !important;
+}
+
+/* Style events */
+.sidebar-calendar-container .fc-event {
+  border-radius: 2px !important;
+  font-size: 0.7rem !important;
+  line-height: 1.2 !important;
+  border: none !important;
+  cursor: pointer;
+}
+
+/* Hide some elements on very small screens */
+@media (max-width: 270px) {
+  .sidebar-calendar-container .fc-toolbar-title {
+    display: none;
+  }
+}
+
+/* Make sure header stays on one line */
+.sidebar-calendar-container .fc-toolbar.fc-header-toolbar {
+  flex-wrap: nowrap !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.sidebar-calendar-container .fc-toolbar.fc-header-toolbar .fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+}
+
+/* Display "more" link in a nicer way */
+.sidebar-calendar-container .fc-daygrid-more-link {
+  font-size: 0.7rem !important;
+  margin: 0 !important;
+  padding: 0 2px !important;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+} 
